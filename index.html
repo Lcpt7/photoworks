@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="个人摄影与视频作品展示。">
+    <title>Camera Roll | Photo Works</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="cursor-light" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="回到顶部">
+        <span class="brand-mark"></span>
+        <span>Photo Works</span>
+      </a>
+      <nav class="nav" aria-label="作品分类">
+        <button class="nav-button is-active" type="button" data-filter="all">全部</button>
+        <button class="nav-button" type="button" data-filter="photo">照片</button>
+        <button class="nav-button" type="button" data-filter="video">视频</button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-media" id="heroMedia"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-copy">
+          <p class="kicker">Personal visual archive</p>
+          <h1 id="page-title">Camera Roll</h1>
+          <p class="intro">把刚拍下来的照片和视频整理成一个有呼吸感的作品集。光线、色彩和瞬间感会按时间慢慢沉淀下来。</p>
+          <div class="hero-actions" aria-label="页面操作">
+            <a class="primary-link" href="#gallery">查看作品</a>
+            <a class="secondary-link" href="#workflow">联系我</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="作品概览">
+          <div>
+            <span class="panel-value" id="photoCount">0</span>
+            <span class="panel-label">Photos</span>
+          </div>
+          <div>
+            <span class="panel-value" id="videoCount">0</span>
+            <span class="panel-label">Videos</span>
+          </div>
+          <div>
+            <span class="panel-value" id="tagCount">0</span>
+            <span class="panel-label">Tags</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="film-strip" id="filmStrip" aria-label="精选预览"></section>
+
+      <section class="section-head" id="gallery">
+        <div>
+          <p class="kicker dark">Gallery</p>
+          <h2>近期作品</h2>
+        </div>
+        <p>一些正在整理中的影像片段，按拍摄时的直觉保留光线、颜色和现场感。</p>
+      </section>
+
+      <section class="toolbar" aria-label="筛选和排序">
+        <div class="search-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="搜索标题、相机或标签" autocomplete="off">
+        </div>
+        <div class="sort-menu" id="sortMenu">
+          <button class="sort-trigger" id="sortButton" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span id="sortLabel">最新优先</span>
+            <span class="sort-icon" aria-hidden="true">⌄</span>
+          </button>
+          <div class="sort-options" id="sortOptions" role="listbox" aria-label="排序方式">
+            <button class="sort-option is-active" type="button" role="option" aria-selected="true" data-sort="newest">最新优先</button>
+            <button class="sort-option" type="button" role="option" aria-selected="false" data-sort="oldest">最早优先</button>
+            <button class="sort-option" type="button" role="option" aria-selected="false" data-sort="title">标题排序</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-grid" id="galleryGrid" aria-label="作品列表"></section>
+
+      <section class="workflow" id="workflow" aria-labelledby="workflow-title">
+        <div>
+          <p class="kicker dark">Contact</p>
+          <h2 id="workflow-title">一起交流</h2>
+        </div>
+        <div class="contact-panel">
+          <p>如果你也喜欢摄影、影像整理或网页创作，可以从这里找到我。</p>
+          <div class="contact-links">
+            <a href="https://github.com/Lcpt7" target="_blank" rel="noreferrer">GitHub / Lcpt7</a>
+            <span>微信 / x070722h</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="lightbox" id="lightbox" aria-label="作品预览">
+      <button class="icon-button close-button" type="button" id="closeLightbox" aria-label="关闭">×</button>
+      <button class="icon-button lightbox-prev" type="button" id="prevItem" aria-label="上一张">‹</button>
+      <button class="icon-button lightbox-next" type="button" id="nextItem" aria-label="下一张">›</button>
+      <div class="lightbox-body" id="lightboxBody"></div>
+      <div class="lightbox-meta">
+        <div>
+          <p id="lightboxTitle"></p>
+          <span id="lightboxInfo"></span>
+        </div>
+        <p id="lightboxDesc"></p>
+      </div>
+    </dialog>
+
+    <script src="gallery-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
