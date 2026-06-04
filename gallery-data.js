@@ -49,10 +49,24 @@ window.galleryItems = [
   date: "2026.06",
   camera: "Insta360 AcePro 2",
   location: "武昌江滩",
-  description: "长江岸边夜景视频。",
+  description: "出门炸街了，啊！",
   accent: "#2859bb",
   width: 3840,
   height: 2160,
-  tags: ["视频", "夜景", "武汉"]
+  tags: ["炸街","夜景", "武汉"]
+  },
+  {
+    type: "video",
+    src: "https://github.com/Lcpt7/photoworks/releases/download/v1.0/20260603_203530_997.mp4",
+    title: "江滩夜阑",
+    subtitle: "Night View of Wuhan Riverside",
+    date: "2026.06",
+    camera: "Insta360 AcePro 2",
+    location: "武昌江滩",
+    description: "江面水波轻轻起伏，两岸楼宇霓虹错落，蓝紫灯光随波纹在江面碎成粼粼光影，夜色漫过整座江城滨水天际线。",
+    accent: "#3668d8",
+    width: 3840,
+    height: 2160,
+    tags: ["江滩夜景","长江", "武汉"]
   }
 ];
