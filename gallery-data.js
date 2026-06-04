@@ -57,7 +57,7 @@ window.galleryItems = [
   },
   {
     type: "video",
-    src: "https://github.com/Lcpt7/photoworks/releases/download/v1.0/20260603_203530_997.mp4",
+    src: "https://github.com/Lcpt7/photoworks/releases/download/v1.0/20260603_212259_303.mp4",
     title: "江滩夜阑",
     subtitle: "Night View of Wuhan Riverside",
     date: "2026.06",
