@@ -41,4 +41,18 @@ window.galleryItems = [
     height: 3072,
     tags: ["风光", "山峦", "晨光", "武功山"]
   },
+  {
+  type: "video",
+  src: "https://github.com/Lcpt7/photoworks/releases/download/v1.0/20260603_203530_997.mp4",
+  title: "武汉夜色",
+  subtitle: "Night In Wuhan",
+  date: "2026.06",
+  camera: "Insta360 AcePro 2",
+  location: "武昌江滩",
+  description: "长江岸边夜景视频。",
+  accent: "#2859bb",
+  width: 3840,
+  height: 2160,
+  tags: ["视频", "夜景", "武汉"]
+  }
 ];
