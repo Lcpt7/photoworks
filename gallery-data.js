@@ -42,6 +42,20 @@ window.galleryItems = [
     tags: ["风光", "山峦", "晨光", "武功山"]
   },
   {
+    type: "photo",
+    src: "works/微信图片_20260605180407_25178_3.jpg",
+    title: "神",
+    subtitle: "GODS",
+    date: "2025.06",
+    camera: "神无法直视",
+    location: "武功山",
+    description: "神",
+    accent: "#000000",
+    width: 1708,
+    height: 1280,
+    tags: ["神"]
+  },
+  {
   type: "video",
   src: "https://github.com/Lcpt7/photoworks/releases/download/v1.0/20260603_203530_997.mp4",
   title: "武汉夜色",
