@@ -56,6 +56,20 @@ window.galleryItems = [
     tags: ["风光", "山峦", "晨光", "武功山"]
   },
   {
+    type: "photo",
+    src: "works/20260605.png",
+    title: "江城霓虹",
+    subtitle: "Wuhan River Nightscape",
+    date: "2026.06",
+    camera: "Insta360 AcePro 2",
+    location: "武昌江滩",
+    description: "长江水面漾开斑斓灯影，跨江大桥与摩天楼宇灯火连绵，蓝粉霓虹倒映江面，勾勒武汉长江沿岸璀璨夜色。",
+    accent: "#295abc",
+    width: 1280,
+    height: 960,
+    tags: ["武汉", "夜景", "长江", "桥梁"]
+  },
+  {
   type: "video",
   src: "https://github.com/Lcpt7/photoworks/releases/download/v1.0/20260603_203530_997.mp4",
   title: "武汉夜色",
